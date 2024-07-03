@@ -1,0 +1,129 @@
+.container {
+  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Fix the missing value */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #072342;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-box a span:nth-child(2) {
+top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+button:hover {
+  background-color: #598abe;
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+.back-btn {
+  position: fixed; /* Fix the button's position */
+  top: 10px; /* Adjust top spacing */
+  right: 13px; /* Adjust right spacing */
+  z-index: 999; /* Ensure the button stays on top */
+}
+
+.active {
+  background-color:rgb(12, 101, 131);
+}
+
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+}
+nav .title{
+  font-size: 1.5rem;
+  margin: 1 rem;
+  font-weight:bold;
+  text-decoration:none;
+  color:darkblue;
+}
+nav ul{
+  display:flex;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  text-decoration:none;
+  color: white;
+  margin:0 0.5rem;
+  border-radius:0.5rem;
+}
